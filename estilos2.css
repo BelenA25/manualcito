@@ -22,9 +22,6 @@
 body {
     font-family: 'Azeret Mono';
     font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
 
 .content {
@@ -48,6 +45,17 @@ body {
     //background-clip: text;
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
     letter-spacing: 0.4rem;
+}
+tr:hover {
+    background-color: rgb(254, 209, 218);
+
+    box-shadow: rgb(190, 122, 136) -1px 1px, rgb(190, 122, 136) -2px 2px, rgb(190, 122, 136) -2px 2px -3px 3px, rgb(190, 122, 136) -4px 4px, rgb(190, 122, 136) -5px 5px, rgb(190, 122, 136)-6px 6px;
+    transform: translate3d(6px, -6px, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
 }
 
 @keyframes shadows {
@@ -164,5 +172,13 @@ body {
     text-align: justify;
 }
 table{
-    
+    margin-top: 50px;
+    line-height: 4ch;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,
+td {
+    border: 1px solid black;
 }
