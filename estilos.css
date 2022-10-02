@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Azeret Mono';
+    font-size: 22px;
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/f5/af/16/f5af167e765674ab5fb292c507c537b6.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.descripcion {
+    text-shadow: 2px 2px #b8b1b0;
+    color: #000;
+    margin: 50px;
+}
+
+.cuadro_descripcion {
+    border: solid #000;
+    z-index: 10;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 28px;
+    background-color: beige;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: darkorange;
+}
+
+img {
+    height: 250px;
+
+}
+
+.imagen1 {
+    position: absolute;
+    top: 95px;
+    left: 130px;
+    z-index: 9;
+}
+
+.imagen3 {
+    position: absolute;
+    top: 60px;
+    left: 1320px;
+    z-index: 9;
+}
+
+.imagen4 {
+    position: absolute;
+    top: 581px;
+    left: 1350px;
+    z-index: 9;
+}
+
+.imagen5 {
+    position: absolute;
+    top: 540px;
+    left: 110px;
+    z-index: 9;
+}
+
+p {
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+p:before,
+p:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+p:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+p:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+
+    2%,
+    64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+.tittle {
+    position: absolute;
+    left: 600px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50pt;
+    color: #fff;
+    background: linear-gradient(110deg, #f4dfd5 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #edccd8 34%, #c49bd2 34%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.tittle {
+    animation: Gradient 5s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 30% 50%
+    }
+
+    50% {
+        background-position: 25% 50%
+    }
+
+    100% {
+        background-position: 30% 50%
+    }
+
+}
