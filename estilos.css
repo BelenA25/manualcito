@@ -19,7 +19,7 @@ body {
     text-shadow: 2px 2px #b8b1b0;
     color: #000;
     margin: 60px;
-    z-index: 20!important;
+    z-index: 20 !important;
 }
 
 .cuadro_descripcion {
@@ -196,4 +196,83 @@ p:after {
         background-position: 30% 50%
     }
 
+}
+
+.sidebar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.tittleSideBar{
+    margin-left: 50px;
+}
+#libros{
+    background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
+}
+.librosh{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: auto;
+    font-size: 20px;
+    font-family: gabriola;
+    font-weight: 600;
+}
+.peliculash{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: auto;
+    font-size: 20px;
+    font-family: tahoma;
+    font-weight: 600;
+}
+.cancionesh{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+#peliculas{
+    font-family: tahoma;
+    background-image: url(https://i.pinimg.com/564x/a1/c9/18/a1c918100b3aa3617d8c8feb9ac80d5d.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.libro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#imagenLibro{
+    width: 150px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+button{
+    position: sticky;
 }
