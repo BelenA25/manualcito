@@ -220,7 +220,7 @@ p:after {
     margin-left: 50px;
 }
 .tittleSideBar{
-    /* margin-left: 50px; */
+    margin-left: 50px;
 }
 #libros{
     background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
@@ -257,6 +257,14 @@ p:after {
 #peliculas{
     font-family: tahoma;
     background-image: url(https://i.pinimg.com/564x/a1/c9/18/a1c918100b3aa3617d8c8feb9ac80d5d.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#musica{
+    font-family: tahoma;
+    background-image: url(https://cdn.shopify.com/s/files/1/0579/2183/1099/products/vinyl-backdrops-5pm-sunset-gradient-vinyl-photography-backdrops-30511132410043_1200x1200.jpg?v=1637275862);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
