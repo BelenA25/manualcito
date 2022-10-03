@@ -220,7 +220,7 @@ p:after {
     margin-left: 50px;
 }
 .tittleSideBar{
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 #libros{
     background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
