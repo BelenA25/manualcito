@@ -13,6 +13,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .descripcion {
@@ -25,16 +27,14 @@ body {
 .cuadro_descripcion {
     border: solid #000;
     z-index: 10;
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 70%;
     font-size: 28px;
     background-color: beige;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: justify;
     text-justify: inter-word;
+    position: relative;
 }
 
 a {
@@ -63,29 +63,29 @@ img {
 
 .imagen1 {
     position: absolute;
-    top: 95px;
-    left: 130px;
+    top: -5px;
+    left: -170px;
     z-index: 9;
 }
 
 .imagen3 {
     position: absolute;
-    top: 200px;
-    left: 1360px;
+    top: 0px;
+    left: 1120px;
     z-index: 9;
 }
 
 .imagen4 {
     position: absolute;
-    top: 581px;
-    left: 1350px;
+    top: 450px;
+    left: 1110px;
     z-index: 9;
 }
 
 .imagen5 {
     position: absolute;
-    top: 540px;
-    left: 110px;
+    top:450px;
+    left: -200px;
     z-index: 9;
 }
 
@@ -164,7 +164,6 @@ p:after {
 }
 
 .tittle {
-    position: absolute;
     left: 600px;
     vertical-align: middle;
     text-align: center;
@@ -220,13 +219,16 @@ p:after {
     font-size: 36px;
     margin-left: 50px;
 }
-.tittleSideBar{
+
+.tittleSideBar {
     margin-left: 50px;
 }
-#libros{
+
+#libros {
     background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
 }
-.librosh{
+
+.librosh {
     display: flex;
     gap: 30px;
     margin-left: 30px;
@@ -236,7 +238,8 @@ p:after {
     font-family: gabriola;
     font-weight: 600;
 }
-.peliculash{
+
+.peliculash {
     display: flex;
     gap: 30px;
     margin-left: 30px;
@@ -246,7 +249,8 @@ p:after {
     font-family: tahoma;
     font-weight: 600;
 }
-.cancionesh{
+
+.cancionesh {
     display: flex;
     gap: 30px;
     margin-left: 30px;
@@ -255,7 +259,8 @@ p:after {
     font-size: 20px;
     font-weight: 600;
 }
-#peliculas{
+
+#peliculas {
     font-family: tahoma;
     background-image: url(https://i.pinimg.com/564x/a1/c9/18/a1c918100b3aa3617d8c8feb9ac80d5d.jpg);
     -webkit-background-size: cover;
@@ -263,7 +268,8 @@ p:after {
     -o-background-size: cover;
     background-size: cover;
 }
-#musica{
+
+#musica {
     font-family: tahoma;
     background-image: url(https://cdn.shopify.com/s/files/1/0579/2183/1099/products/vinyl-backdrops-5pm-sunset-gradient-vinyl-photography-backdrops-30511132410043_1200x1200.jpg?v=1637275862);
     -webkit-background-size: cover;
@@ -271,17 +277,64 @@ p:after {
     -o-background-size: cover;
     background-size: cover;
 }
-.libro{
+
+.libro {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-#imagenLibro{
+
+#imagenLibro {
     width: 150px;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-button{
+
+button {
     position: sticky;
+}
+
+#main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:550px) {
+
+    /*media query, cuando el ancho maximo es de 450px se hace lo siguiente*/
+    .cuadro_descripcion {
+        margin-left: 100px;
+        margin-right: 50px;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .tittle {
+        font-size: 30px;
+    }
+    .tittleSideBar{
+        font-size: 20px;
+    }
+    .sidebar{
+        width: fit-content;
+    }
+    img{
+        height: 200px!important;
+    }
+    .imagen3{
+        display: none;
+    }
+    .imagen4{
+        display: none;
+    }
+    .imagen1{
+        display: none;
+    }
+    .imagen5{
+        display: none;
+    }
 }

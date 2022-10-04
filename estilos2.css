@@ -283,9 +283,18 @@ footer {
     margin: auto;
     width: 50%;
     padding: 10px;
+    text-transform: uppercase;
+  transition: 0.5s;
 }
 
 .cuerpo-visible {
     margin-top: 110px;
     z-index: 1;
 }
+#nav:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #c355df,
+                0 0 25px #c355df,
+                0 0 50px #c355df,
+                0 0 100px #c355df;
+  }
