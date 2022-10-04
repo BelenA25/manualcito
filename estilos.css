@@ -317,7 +317,7 @@ button {
         font-size: 30px;
     }
     .tittleSideBar{
-        font-size: 20px;
+        font-size: 15px;
     }
     .sidebar{
         width: fit-content;
@@ -336,5 +336,11 @@ button {
     }
     .imagen5{
         display: none;
+    }
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        font-size: 40px;
     }
 }
