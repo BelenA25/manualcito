@@ -38,6 +38,7 @@ body {
     background-color: yellow;
     margin-bottom: 40px;
     border: #000 solid 2px;
+    width: 100vw;
 }
 
 .trabajosh {
@@ -48,6 +49,7 @@ body {
     background-color: rgb(86, 200, 204);
     transform: rotate(357deg);
     border: #000 solid 2px;
+    width: 100vw;
 }
 
 .text_shadows {
@@ -310,17 +312,26 @@ footer {
     .header {
         gap: 10px !important;
     }
-    #nav{
+
+    #nav {
         font-size: 15px;
     }
-    .linea-1{
+
+    .linea-1 {
         flex-direction: column;
         align-items: center;
     }
-    .linea-2{
+
+    .linea-2 {
         flex-direction: column;
     }
+
     .imagen {
         height: 150px;
-     }
+    }
+
+    table {
+        width: fit-content;
+        font-size: 2.5vw;
+    }
 }
