@@ -63,7 +63,6 @@ img {
 
 .imagen1 {
     position: absolute;
-    top: -5px;
     left: -170px;
     z-index: 9;
 }
