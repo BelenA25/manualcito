@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Azeret Mono';
+    font-size: 22px;
+    background-image: url(https://i.pinimg.com/originals/f5/af/16/f5af167e765674ab5fb292c507c537b6.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.descripcion {
+    text-shadow: 2px 2px #b8b1b0;
+    color: #000;
+    margin: 5%;
+    z-index: 20 !important;
+}
+
+.cuadro_descripcion {
+    border: solid #000;
+    z-index: 10;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 28px;
+    background-color: beige;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: darkorange;
+}
+
+img {
+    height: 250px;
+
+}
+
+.imagen1 {
+    position: absolute;
+    top: 95px;
+    left: 130px;
+    z-index: 9;
+}
+
+.imagen3 {
+    position: absolute;
+    top: 200px;
+    left: 1380px;
+    z-index: 9;
+}
+
+.imagen4 {
+    position: absolute;
+    top: 581px;
+    left: 1350px;
+    z-index: 9;
+}
+
+.imagen5 {
+    position: absolute;
+    top: 540px;
+    left: 110px;
+    z-index: 9;
+}
+
+p {
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+p:before,
+p:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+p:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+p:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+
+    2%,
+    64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+.tittle {
+    position: absolute;
+    left: 600px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50pt;
+    color: #fff;
+    background: linear-gradient(110deg, #406454 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #7cc3b3 34%, #645c64 34%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.tittle {
+    animation: Gradient 5s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 30% 50%
+    }
+
+    50% {
+        background-position: 25% 50%
+    }
+
+    100% {
+        background-position: 30% 50%
+    }
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.tittleSideBar{
+    margin-left: 50px;
+}
+#libros{
+    background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
+}
+.contenidoContainer{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: auto;
+    font-size: 20px;
+    font-family: gabriola;
+    font-weight: 600;
+}
+#peliculas{
+    font-family: tahoma;
+    background-image: url(https://i.pinimg.com/564x/a1/c9/18/a1c918100b3aa3617d8c8feb9ac80d5d.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#musica{
+    font-family: tahoma;
+    background-image: url(https://cdn.shopify.com/s/files/1/0579/2183/1099/products/vinyl-backdrops-5pm-sunset-gradient-vinyl-photography-backdrops-30511132410043_1200x1200.jpg?v=1637275862);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.elemento{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#imagenElemento{
+    width: 150px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+button{
+    position: sticky;
+}
