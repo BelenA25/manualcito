@@ -307,7 +307,7 @@ const libros = [
   crearContenido("cancionesh", canciones)
   crearContenido("cantantesh", cantantes)
   function openNavLibro() {
-    document.getElementById("libros").style.width = "1000px";
+    document.getElementById("libros").style.width = "60%";
     document.getElementById("main").style.marginLeft = "0px";
   }
 
@@ -316,7 +316,7 @@ const libros = [
     document.getElementById("main").style.marginLeft = "0";
   }
   function openNavPelicula() {
-    document.getElementById("peliculas").style.width = "1000px";
+    document.getElementById("peliculas").style.width = "60%";
     document.getElementById("main").style.marginLeft = "0px";
   }
 
@@ -325,7 +325,7 @@ const libros = [
     document.getElementById("main").style.marginLeft = "0";
   }
   function openNavMusica() {
-    document.getElementById("musica").style.width = "1000px";
+    document.getElementById("musica").style.width = "60%";
     document.getElementById("main").style.marginLeft = "0px";
   }
 

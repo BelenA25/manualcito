@@ -271,11 +271,12 @@ h2{
     background-size: cover;
 }
 .elemento{
-    font-family: 'Candara';
+    font-family: 'Verdana';
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 18px;
 }
 #imagenElemento{
     width: 150px;
