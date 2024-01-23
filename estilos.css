@@ -8,10 +8,8 @@ body {
     font-family: 'Azeret Mono';
     font-size: 22px;
     background-image: url(https://i.pinimg.com/originals/f5/af/16/f5af167e765674ab5fb292c507c537b6.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .descripcion {
@@ -179,10 +177,6 @@ p:after {
 }
 
 .tittle {
-    /*position: absolute;
-    left: 600px;
-    vertical-align: middle;
-    text-align: center;*/
     font-size: 60pt;
     font-weight: 1000!important;
     color: #fff;
