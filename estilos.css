@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -229,11 +231,18 @@ p:after {
     font-size: 36px;
     margin-left: 50px;
 }
+h2{
+    font-weight: 600;
+    font-size: 40px;
+}
 .tittleSideBar{
     margin-left: 50px;
 }
 #libros{
-    background-image: url(https://media.istockphoto.com/vectors/seamless-floral-damask-pattern-vector-id1031360658?k=20&m=1031360658&s=612x612&w=0&h=fj4mC5b1HHUxp-nyIKu9aytKcPQ52K6P0YzoKBfN-PM=);
+    background-image: url(https://i.ibb.co/txhbW0J/zyro-image-1.jpg);
+    font-family: 'Dancing Script';
+    font-weight: 1000!important;
+    background-size: cover;
 }
 .contenidoContainer{
     display: flex;
@@ -262,6 +271,7 @@ p:after {
     background-size: cover;
 }
 .elemento{
+    font-family: 'Candara';
     text-align: center;
     display: flex;
     flex-direction: column;
