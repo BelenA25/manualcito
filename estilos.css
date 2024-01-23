@@ -60,13 +60,13 @@ img {
 
 .imagen1 {
     position: absolute;
-    top: -15%;
+    top: -9%;
     left: -10%;
     z-index: 9;
     width: 220px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1500px) {
     .imagen1 {
         display: none;
     }
@@ -171,7 +171,7 @@ p:after {
     left: 600px;
     vertical-align: middle;
     text-align: center;*/
-    font-size: 50pt;
+    font-size: 60pt;
     color: #fff;
     background: linear-gradient(110deg, #406454 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #7cc3b3 34%, #645c64 34%);
     background-size: 400%;
