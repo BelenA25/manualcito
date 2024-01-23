@@ -8,7 +8,7 @@ body {
     font-family: 'Azeret Mono';
     font-size: 22px;
     background-image: url(https://i.pinimg.com/originals/f5/af/16/f5af167e765674ab5fb292c507c537b6.png);
-    background-size: cover;
+      background-size: cover;
     background-attachment: fixed;
 }
 
@@ -99,7 +99,7 @@ img {
     top: 60%;
     left: -10%;
     z-index: 9;
-    width: 2300px;
+    width: 230px;
 }
 
 p {
