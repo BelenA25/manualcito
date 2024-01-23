@@ -75,6 +75,11 @@ img {
         display: none;
     }
 }
+@media (max-width: 1000px) {
+    .tittle {
+       font-size: 45pt!important;
+    }
+}
 .imagen3 {
     position: absolute;
     top: 0%;
@@ -179,6 +184,7 @@ p:after {
     vertical-align: middle;
     text-align: center;*/
     font-size: 60pt;
+    font-weight: 1000!important;
     color: #fff;
     background: linear-gradient(110deg, #406454 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #7cc3b3 34%, #645c64 34%);
     background-size: 400%;
