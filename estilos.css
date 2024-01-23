@@ -25,7 +25,6 @@ body {
     border: solid #000;
     z-index: 10;
     position: absolute;
-    margin-top: 9%;
     margin-left: 15%;
     margin-right: 15%;
     font-size: 28px;
@@ -56,17 +55,22 @@ a:hover {
 }
 
 img {
-    height: 250px;
-
+    max-width: 230px;
 }
 
 .imagen1 {
     position: absolute;
-    top: 95px;
-    left: 130px;
+    top: -15%;
+    left: -10%;
     z-index: 9;
+    width: 220px;
 }
 
+@media (max-width: 650px) {
+    .imagen1 {
+        display: none;
+    }
+}
 .imagen3 {
     position: absolute;
     top: 200px;
@@ -163,10 +167,10 @@ p:after {
 }
 
 .tittle {
-    position: absolute;
+    /*position: absolute;
     left: 600px;
     vertical-align: middle;
-    text-align: center;
+    text-align: center;*/
     font-size: 50pt;
     color: #fff;
     background: linear-gradient(110deg, #406454 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #7cc3b3 34%, #645c64 34%);
