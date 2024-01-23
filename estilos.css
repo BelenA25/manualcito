@@ -73,9 +73,10 @@ img {
 }
 .imagen3 {
     position: absolute;
-    top: 200px;
-    left: 1380px;
+    top: 0%;
+    left: 93%;
     z-index: 9;
+    width: 250px
 }
 
 .imagen4 {
