@@ -290,10 +290,9 @@ footer {
     left: 0;
     right: 0;
     top: 0;
-    position: fixed;
-    padding: 20px;
+    padding: 1%;
     background-color: #fff;
-    gap: 100px;
+    gap: 6%;
     z-index: 10;
 }
 
@@ -307,6 +306,61 @@ footer {
 }
 
 .cuerpo-visible {
-    margin-top: 110px;
     z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .meTalking {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #me {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .bubble {
+        margin: 20px;
+    }
+
+    .texto {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .text_shadows {
+        font-size: calc(1.5rem + 5vw);
+    }
+}
+
+@media (max-width: 480px) {
+
+    #me {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .bubble {
+        padding: 10px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .text_shadows {
+        font-size: calc(1rem + 4vw);
+    }
 }
