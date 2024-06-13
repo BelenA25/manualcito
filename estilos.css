@@ -254,12 +254,39 @@ h2{
     font-family: gabriola;
     font-weight: 600;
 }
+/* Cinzel Decorative */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+/* Abril Fatface */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Lobster Two */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Merienda One */
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+/* Rokkitt */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
+/* Josefin Slab */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 #peliculas{
-    font-family: tahoma;
-    background-image: url(https://i.pinimg.com/564x/a1/c9/18/a1c918100b3aa3617d8c8feb9ac80d5d.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url(https://i.pinimg.com/564x/a8/5f/c8/a85fc84c65c7ad9471b06c31f7a30061.jpg);
     background-size: cover;
 }
 #musica{
